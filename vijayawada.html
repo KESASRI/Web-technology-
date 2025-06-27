@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flavour Finder : Restaurant Ratings & Reviews</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-image: url(background.jpeg);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        h1 {
+            font-size: 2rem;
+            color: rgba(244, 143, 165, 0.995);
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+            margin-top: 20px;
+            font-style: italic;
+            font-family: sans-serif;
+        }
+        .container {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: repeat(3, 1fr);
+            gap: 10px;
+            width: 80%;
+            max-width: 1200px;
+            height: auto; 
+        }
+        .restaurant-frame {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            border: 2px solid #0f0707;
+            border-radius: 5px;
+            overflow: hidden;
+            background-color: #eadada;
+            transition: transform 0.2s;
+            text-decoration: none;
+            color: inherit;
+            padding: 10px; 
+        }
+        .restaurant-frame:hover {
+            transform: scale(1.05);
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+        .restaurant-frame img {
+            width: 100%;
+            height: 150px;
+            object-fit: cover;
+        }
+        .restaurant-frame h2 {
+            font-size: 1.2rem;
+            color: #930404;
+            margin: 10px 0;
+        }
+        .rating {
+            display: flex;
+            justify-content: center;
+            margin: 5px 0;
+        }
+        .star {
+            color:rgb(209, 67, 27);
+            margin: 0 1px;
+        }
+        .reviews {
+            font-size: 0.9rem;
+            color: #555;
+        }
+    </style>
+</head>
+<body>
+    <h1>RESTAURANTS IN VIJAYAWADA</h1>
+    <div class="container">
+        <a href="MENU3.HTML" class="restaurant-frame">
+            <img src="https://i.ytimg.com/vi/fUfkXHDSh3k/sddefault.jpg">
+            <h2>BARBIQUE NATION</h2>
+            <div class="rating">
+                <span class="star">★</span>
+                <span class="star">★</span>
+                <span class="star">★</span>
+                <span class="star">★</span>
+                <span class="star">☆</span>
+            </div>
+        </a>
+        <a href="MENU2.HTML" class="restaurant-frame">
+            <img src="https://platform65.in/wp-content/uploads/2023/12/1200x600-800x400.jpg">
+            <h2>PLATFORM TRAIN 65 THEME RESTAURANT</h2>
+            <div class="rating">
+                <span class="star">★</span>
+                <span class="star">★</span>
+                <span class="star">★</span>
+                <span class="star">★</span>
+                <span class="star">☆</span>
+            </div>
+        </a>
+        <a href="MENU.html" class="restaurant-frame">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTLI_cdE14k8P2MgRNANZmkLvJje48xD4qbsw&s">
+            <h2>BARCAAS ARABIC RESTAURANT</h2>
+            <div class="rating">
+                <span class="star">★</span>
+                <span class="star">★</span>
+                <span class="star">★</span>
+                <span class="star">★</span>
+                <span class="star">☆</span>
+            </div>
+        </a>
+        <a href="MENU4.HTML" class="restaurant-frame">
+            <img src="https://content3.jdmagicbox.com/comp/vijayawada/t5/0866px866.x866.140730111935.i2t5/catalogue/silver-dum-biryani-ntr-circle-vijayawada-biryani-restaurants-buzfk5kjpu.jpg">
+            <h2>SLIVER DUM BIRIYANI</h2>
+            <div class="rating">
+                <span class="star">★</span>
+                <span class="star">★</span>
+                <span class="star">★</span>
+                <span class="star">★</span>
+                <span class="star">☆</span>
+            </div>
+        </a>
+        <a href="MENU2.HTML" class="restaurant-frame">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRp1P8UeN8UCCm0KvtpqajIq2j8alwiguPAeQ&s">
+            <h2>KK RESTUARENT</h2>
+            <div class="rating">
+                <span class="star">★</span>
+                <span class="star">★</span>
+                <span class="star">★</span>
+                <span class="star">★</span>
+                <span class="star">★</span>
+            </div>
+        </a>
+        <a href="MENU.html" class="restaurant-frame">
+            <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/2d/cf/bd/98/logo.jpg?w=600&h=400&s=1">
+            <h2>FIVE ELEMENTS</h2>
+            <div class="rating">
+                <span class="star">★</span>
+                <span class="star">★</span>
+                <span class="star">★</span>
+                <span class="star">★</span>
+                <span class="star">★</span>
+            </div>
+        </a>
+        <a href="MENU4.HTML" class="restaurant-frame">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT1VZkt_XZRvmHFTr7OjhAL6QIsb4gK2EasoQ&s" >
+            <h2>ASIAN FOOD BOWL</h2>
+            <div class="rating">
+                <span class="star">★</span>
+                <span class="star">★</span>
+                <span class="star">★</span>
+                <span class="star">★</span>
+                <span class="star">★</span>
+            </div>
+        </a>
+        <a href="MENU.html" class="restaurant-frame">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQM5swLT6N1NDriMSI2hZv24U1jrh9_nogcng&s">
+            <h2>UNITED FOOD PALACE</h2>
+            <div class="rating">
+                <span class="star">★</span>
+                <span class="star">★</span>
+                <span class="star">★</span>
+                <span class="star">★</span>
+                <span class="star">★</span>
+            </div>
+         </a>
+    </div>
+</body>
+</html>

@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flavour Finder : Restaurant Ratings & Reviews</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-image: url(background.jpeg);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        h1 {
+            font-size: 2rem;
+            color: rgba(244, 143, 165, 0.995);
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+            margin-top: 20px;
+            font-style: italic;
+            font-family: sans-serif;
+        }
+        .container {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: repeat(3, 1fr);
+            gap: 10px;
+            width: 80%;
+            max-width: 1200px;
+            height: auto;
+        }
+        .restaurant-frame {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            border: 2px solid #0f0707;
+            border-radius: 5px;
+            overflow: hidden;
+            background-color: #eadada;
+            transition: transform 0.2s;
+            text-decoration: none;
+            color: inherit;
+            padding: 10px; 
+        }
+        .restaurant-frame:hover {
+            transform: scale(1.05);
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+        .restaurant-frame img {
+            width: 100%;
+            height: 150px;
+            object-fit: cover;
+        }
+        .restaurant-frame h2 {
+            font-size: 1.2rem;
+            color: #930404;
+            margin: 10px 0;
+        }
+        .rating {
+            display: flex;
+            justify-content: center;
+            margin: 5px 0;
+        }
+        .star {
+            color:rgb(209, 67, 27);
+            margin: 0 1px;
+        }
+        .reviews {
+            font-size: 0.9rem;
+            color: #555;
+        }
+    </style>
+</head>
+<body>
+    <h1>RESTAURANTS IN CHIRALA</h1>
+    <div class="container">
+        <a href="MENU.html" class="restaurant-frame">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQHuCfDAyo_rzY6Ey6h_iXR-ZiCQ7MHoYmnqw&s">
+            <h2>AMOGHA FAMILY RESTAURANT</h2>
+            <div class="rating">
+                <span class="star">★</span>
+                <span class="star">★</span>
+                <span class="star">★</span>
+                <span class="star">★</span>
+                <span class="star">★</span>
+            </div>
+        </a>
+        <a href="MENU.html" class="restaurant-frame">
+            <img src="https://content.jdmagicbox.com/v2/comp/prakasam/s1/9999p8592.8592.231215000630.k5s1/catalogue/missamma-family-restaurant-prakasam-restaurants-7vdar2dpbh-250.jpg">
+            <h2>MISSAMMA FAMILY RESTAURANT</h2>
+            <div class="rating">
+                <span class="star">★</span>
+                <span class="star">★</span>
+                <span class="star">★</span>
+                <span class="star">★</span>
+                <span class="star">☆</span>
+            </div>
+        </a>
+        <a href="MENU4.HTML" class="restaurant-frame">
+            <img src="https://content.jdmagicbox.com/comp/chirala/z5/9999p8594.8594.220820165837.l5z5/catalogue/-z8g67u5ix2.jpg">
+            <h2>Mr.MOGILI</h2>
+            <div class="rating">
+                <span class="star">★</span>
+                <span class="star">★</span>
+                <span class="star">★</span>
+                <span class="star">★</span>
+                <span class="star">★</span>
+            </div>
+        </a>
+        <a href="MENU3.HTML" class="restaurant-frame">
+            <img src="https://b.zmtcdn.com/data/reviews_photos/c87/d8a2c889730eea3ce161c3f72c3a6c87_1645543881.jpg">
+            <h2>BIRYANI DARBAR</h2>
+            <div class="rating">
+                <span class="star">★</span>
+                <span class="star">★</span>
+                <span class="star">★</span>
+                <span class="star">★</span>
+                <span class="star">★</span>
+            </div>
+        </a>
+        <a href="MENU2.HTML" class="restaurant-frame">
+            <img src="https://yt3.googleusercontent.com/dHmNXFRu_cfWWl4r9os8x6zQcpLoDh08sRrKXygdQuTWOE69bTzzMTn37cleDOsQuVPGtu4k=s900-c-k-c0x00ffffff-no-rj">
+            <h2>NAWAB KITCHEN</h2>
+            <div class="rating">
+                <span class="star">★</span>
+                <span class="star">★</span>
+                <span class="star">★</span>
+                <span class="star">★</span>
+                <span class="star">★</span>
+            </div>
+        </a>
+        <a href="MENU3.HTML" class="restaurant-frame">
+            <img src="https://lh3.googleusercontent.com/p/AF1QipN-vYIU6XaqFQeWgz6G73Q611QxPGMgx4LBOgjx=s1360-w1360-h1020">
+            <h2>FAMILY & FRIENDS RESTAURANT</h2>
+            <div class="rating">
+                <span class="star">★</span>
+                <span class="star">★</span>
+                <span class="star">★</span>
+                <span class="star">★</span>
+                <span class="star">☆</span>
+            </div>
+        </a>
+        <a href="MENU.html" class="restaurant-frame">
+            <img src="https://lh3.googleusercontent.com/p/AF1QipNfLqeNT0yRb6TzSAGDui9k2x0KQZXN4fgPlW7C=s1360-w1360-h1020">
+            <h2>BUJJI BIRYANI RESTUARENT</h2>
+            <div class="rating">
+                <span class="star">★</span>
+                <span class="star">★</span>
+                <span class="star">★</span>
+                <span class="star">★</span>
+                <span class="star">☆</span>
+            </div>
+        </a>
+        <a href="MENU4.HTML" class="restaurant-frame">
+            <img src="https://lh3.googleusercontent.com/p/AF1QipOfwUSc5ANoNk5xsGYLb05wtmTeFUBim3-TYzt2=s1360-w1360-h1020">
+            <h2>ATHIDHI GRAND FAMILY RESTUARENT</h2>
+            <div class="rating">
+                <span class="star">★</span>
+                <span class="star">★</span>
+                <span class="star">★</span>
+                <span class="star">★</span>
+                <span class="star">☆</span>
+            </div>
+        </a>
+    </div>
+</body>
+</html>

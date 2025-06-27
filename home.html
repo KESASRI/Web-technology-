@@ -1,0 +1,107 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flavour Finder:Restaurant Ratings&Reviews</title>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+        <script>
+        function navigateToPage() {
+            const selectElement = document.getElementById("cities");
+            const selectedPage = selectElement.value;
+
+            if (selectedPage) {
+              window.location.href = selectedPage;
+            } else {
+              alert("Please select a page to navigate to.");
+            }
+          }
+      </script>
+        <style>
+        body {
+          font-family: "Sofia", sans-serif;
+          background-image: url(https://static.vecteezy.com/system/resources/previews/032/492/759/large_2x/restaurant-eatery-with-wooden-furniture-graphic-novel-anime-manga-wallpaper-free-photo.jpg);
+          background-repeat: no-repeat;
+          background-size: cover;
+          overflow-x: hidden;
+        }
+        .logo{
+          display: flex;
+          justify-content: center;
+          width: 100%;
+          background-color: rgb(236, 196, 143);
+        }
+        .logo h1{
+          color: rgb(197, 29, 29);
+          text-align: center;
+        }
+        header{
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          width:100%;
+        } 
+        main{
+          height: auto;
+          width: 100%;
+          backdrop-filter: blur(1px);
+          margin-left: 35%;
+          margin-top: 0;
+        }
+        select{
+          height: 35px;
+          padding-right: 25px;
+          margin-top: 20px;
+          background-color: rgb(255, 228, 192);
+          margin-left: 20px;
+          font-weight: bold;
+          font-style:italic;
+          font-size: larger;
+          font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+        }
+        button{
+          background-color:rgb(196,24,25);
+          color:white;
+          font-size: 50%;
+          height: 40px;
+          width: 10%;
+          font-size: larger;
+        }
+        </style>
+</head>
+<body >
+  <header>
+    <div class="logo">
+      <h1>Flavour Finder : Restaurant Ratings&Reviews</h1> 
+    </div>
+</header>
+   <img src="welcome-removebg-preview.png" style="margin-top: 0%;">
+   <main>
+      <label for="cities" style="text-align:center ;color: rgb(213, 206, 236);font-size: 250%">Please enter Your City:</label>
+      <select id="cities" required>
+        <option value="" disabled selected>Select your city</option>
+        <option value="amaravathi.html">Amaravathi</option>
+        <option value="bhimavaram.html">Bhimavaram</option>
+        <option value="CHITOOR.html">Chitoor</option>
+        <option value="CHIRALA.html">Chirala</option>
+        <option value="eluru.html">Eluru</option>
+        <option value="guntur.html">Guntur</option>
+        <option value="HINDUPURAM.HTML">Hindhupuram</option>
+        <option value="KADAPA.HTML">Kadapa</option>
+        <option value="KAKINADA.HTML">Kakinada</option>
+        <option value="Machilipatnam.html">Machilipatnam</option>
+        <option value="ex.HTML">Nellore</option>
+        <option value="Palakollu.html">Palakollu</option>
+        <option value="rajahmundry.html">Rajahmundry</option>
+        <option value="tenali.html">Tenali</option>
+        <option value="tirupathi.html">Tirupati</option>
+        <option value="srikakulam.html">Srikakulam</option>
+        <option value="vijayawada.html">Vijayawada</option>
+        <option value="vizag.html">Vizag</option>
+        <option value="yanam.html">Yanam</option>
+      </select>
+      <button  onclick="navigateToPage()">search</button></h2>
+  </main>
+</body>
+</html>

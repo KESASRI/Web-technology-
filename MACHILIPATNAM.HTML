@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flavour Finder : Restaurant Ratings & Reviews</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-image: url(background.jpeg);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        h1 {
+            font-size: 2rem;
+            color: rgba(244, 143, 165, 0.995);
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+            margin-top: 20px;
+            font-style: italic;
+            font-family: sans-serif;
+        }
+        .container {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: repeat(3, 1fr);
+            gap: 10px;
+            width: 80%;
+            max-width: 1200px;
+            height: auto;
+        }
+        .restaurant-frame {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            border: 2px solid #0f0707;
+            border-radius: 5px;
+            overflow: hidden;
+            background-color: #eadada;
+            transition: transform 0.2s;
+            text-decoration: none;
+            color: inherit;
+            padding: 10px;
+        }
+        .restaurant-frame:hover {
+            transform: scale(1.05);
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+        .restaurant-frame img {
+            width: 100%;
+            height: 150px;
+            object-fit: cover;
+        }
+        .restaurant-frame h2 {
+            font-size: 1.2rem;
+            color: #930404;
+            margin: 10px 0;
+        }
+        .rating {
+            display: flex;
+            justify-content: center;
+            margin: 5px 0;
+        }
+        .star {
+            color:rgb(209, 67, 27);
+            margin: 0 1px;
+        }
+        .reviews {
+            font-size: 0.9rem;
+            color: #555;
+        }
+    </style>
+</head>
+<body>
+    <h1>RESTAURANTS IN MACHILIPATNAM</h1>
+    <div class="container">
+        <a href="MENU.html" class="restaurant-frame">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRO51SZ8aPtRBGZ2HxkQ-VQnjkhBZdWHiwODUIGkJHh5SCwulFbeAzZD1oIFbZeJBh1StU&usqp=CAU">
+            <h2>SHANMUKA BARBEQUE AND BIRYANI CENTRE</h2>
+            <div class="rating">
+                <span class="star">★</span>
+                <span class="star">★</span>
+                <span class="star">★</span>
+                <span class="star">★</span>
+                <span class="star">★</span>
+            </div>
+        </a>
+        <a href="MENU2.HTML" class="restaurant-frame">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSigJhVCdSiRcav1jlfjOEckBh6wVSo7z4oQA&s">
+            <h2>RK FAMILY RESTAURANT</h2>
+            <div class="rating">
+                <span class="star">★</span>
+                <span class="star">★</span>
+                <span class="star">★</span>
+                <span class="star">★</span>
+                <span class="star">☆</span>
+            </div>
+        </a>
+        <a href="MENU3.HTML" class="restaurant-frame">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSdJjhRz6qIxnobyvttmspc5jB91589n3s5cMEzQjBA0kd_4md3D0ThSgbtW0E7g2kY0G8&usqp=CAU">
+            <h2>GRILL HEAVEN RESTAURANT</h2>
+            <div class="rating">
+                <span class="star">★</span>
+                <span class="star">★</span>
+                <span class="star">★</span>
+                <span class="star">★</span>
+                <span class="star">☆</span>
+            </div>
+        </a>
+        <a href="MENU4.HTML" class="restaurant-frame">
+            <img src="https://i.ytimg.com/vi/22ASBhplwcU/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLBy8nYcEa0sR7F87ZECyeaQeB_H2w">
+            <h2>FISH ANDHRA RESTAURANT</h2>
+            <div class="rating">
+                <span class="star">★</span>
+                <span class="star">★</span>
+                <span class="star">★</span>
+                <span class="star">★</span>
+                <span class="star">☆</span>
+            </div>
+        </a>
+        <a href="MENU3.HTML" class="restaurant-frame">
+            <img src="https://b.zmtcdn.com/data/pictures/8/19588008/e22bc25ddadc7d6f5e30a52c54678dd9.jpeg">
+            <h2>HAPPIE BAY RESTAURANT</h2>
+            <div class="rating">
+                <span class="star">★</span>
+                <span class="star">★</span>
+                <span class="star">★</span>
+                <span class="star">★</span>
+                <span class="star">☆</span>
+            </div>
+        </a>
+        <a href="MENU.html" class="restaurant-frame">
+            <img src="https://lh3.googleusercontent.com/p/AF1QipNm8Fo1Ia5l3t26MtIM4vlirIsgM_7I3320B_fj=s1360-w1360-h1020">
+            <h2>MANGAPATHI BIRYANI RESTAURANT</h2>
+            <div class="rating">
+                <span class="star">★</span>
+                <span class="star">★</span>
+                <span class="star">★</span>
+                <span class="star">★</span>
+                <span class="star">☆</span>
+            </div>
+        </a>
+        <a href="MENU2.HTML" class="restaurant-frame">
+            <img src="https://content.jdmagicbox.com/comp/amalapuram/v9/9999p8856.8856.230606212457.u8v9/catalogue/five-star-chicken-moberlypeta-amalapuram-fast-food-zfgv6co8d7.jpg" >
+            <h2>VVS GRAND FUSION RESTUARANT</h2>
+            <div class="rating">
+                <span class="star">★</span>
+                <span class="star">★</span>
+                <span class="star">★</span>
+                <span class="star">★</span>
+                <span class="star">★</span>
+            </div>
+        </a>
+        <a href="MENU4.HTML" class="restaurant-frame">
+            <img src="https://img.restaurantguru.com/r14f-SATHEESH-HOTEL-exterior.jpg">
+            <h2>SSB BIRYANI RESTUARANT</h2>
+            <div class="rating">
+                <span class="star">★</span>
+                <span class="star">★</span>
+                <span class="star">★</span>
+                <span class="star">★</span>
+                <span class="star">★</span>
+            </div>
+         </a>
+    </div>
+</body>
+</html>

@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flavour Finder : Restaurant Ratings & Reviews</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-image: url(background.jpeg);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        h1 {
+            font-size: 2rem;
+            color: rgba(244, 143, 165, 0.995);
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+            margin-top: 20px;
+            font-style: italic;
+            font-family: sans-serif;
+        }
+        .container {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: repeat(3, 1fr);
+            gap: 10px;
+            width: 80%;
+            max-width: 1200px;
+            height: auto;
+        }
+        .restaurant-frame {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            border: 2px solid #0f0707;
+            border-radius: 5px;
+            overflow: hidden;
+            background-color: #eadada;
+            transition: transform 0.2s;
+            text-decoration: none;
+            color: inherit;
+            padding: 10px;
+        }
+        .restaurant-frame:hover {
+            transform: scale(1.05);
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+        .restaurant-frame img {
+            width: 100%;
+            height: 150px;
+            object-fit: cover;
+        }
+        .restaurant-frame h2 {
+            font-size: 1.2rem;
+            color: #930404;
+            margin: 10px 0;
+        }
+        .rating {
+            display: flex;
+            justify-content: center;
+            margin: 5px 0;
+        }
+        .star {
+            color:rgb(209, 67, 27);
+            margin: 0 1px;
+        }
+        .reviews {
+            font-size: 0.9rem;
+            color: #555;
+        }
+    </style>
+</head>
+<body>
+    <h1>RESTAURANTS IN KADAPA</h1>
+    <div class="container">
+        <a href="MENU.html" class="restaurant-frame">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTlHjsocfxC6eY1s27H_sPmBcYwmmd1MAfO7A&s">
+            <h2>A2 RESTAURANT</h2>
+            <div class="rating">
+                <span class="star">★</span>
+                <span class="star">★</span>
+                <span class="star">★</span>
+                <span class="star">★</span>
+                <span class="star">★</span>
+            </div>
+        </a>
+        <a href="MENU2.HTML" class="restaurant-frame">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT-3XX-T1ss04hpuGGLzTJueqaDlV20KdecVg&s">
+            <h2>VIJAYA'S YUMMY FOOD</h2>
+            <div class="rating">
+                <span class="star">★</span>
+                <span class="star">★</span>
+                <span class="star">★</span>
+                <span class="star">★</span>
+                <span class="star">★</span>
+            </div>
+        </a>
+        <a href="MENU3.HTML" class="restaurant-frame">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSdJjhRz6qIxnobyvttmspc5jB91589n3s5cMEzQjBA0kd_4md3D0ThSgbtW0E7g2kY0G8&usqp=CAU">
+            <h2>SIDDU'S FAMILY RESTAURANT</h2>
+            <div class="rating">
+                <span class="star">★</span>
+                <span class="star">★</span>
+                <span class="star">★</span>
+                <span class="star">★</span>
+                <span class="star">★</span>
+            </div>
+        </a>
+        <a href="MENU3.HTML" class="restaurant-frame">
+            <img src="https://content3.jdmagicbox.com/comp/kadapa/x8/9999p8562.8562.170817124042.j3x8/catalogue/venkata-mayuri-ac-family-garden-restaurant-cuddapah-ho-kadapa-home-delivery-restaurants-dqr47jbvsg.jpg">
+            <h2>FAMILY GARDEN RESTAURANT</h2>
+            <div class="rating">
+                <span class="star">★</span>
+                <span class="star">★</span>
+                <span class="star">★</span>
+                <span class="star">★</span>
+                <span class="star">★</span>
+            </div>
+        </a>
+        <a href="MENU4.HTML" class="restaurant-frame">
+            <img src="https://img.restaurantguru.com/rf6a-Kabab-King-view-2022-09.jpg">
+            <h2>THE KING FAMILY AC RESTAURANT</h2>
+            <div class="rating">
+                <span class="star">★</span>
+                <span class="star">★</span>
+                <span class="star">★</span>
+                <span class="star">★</span>
+                <span class="star">☆</span>
+            </div>
+        </a>
+        <a href="MENU3.HTML" class="restaurant-frame">
+            <img src="https://b.zmtcdn.com/data/pictures/1/20208041/2fb6f4e66ea92342e73da3103368d44e.jpg?fit=around%7C200%3A200&crop=200%3A200%3B%2A%2C%2A">
+            <h2>TAAZA RUCHI RESTAURANT</h2>
+            <div class="rating">
+                <span class="star">★</span>
+                <span class="star">★</span>
+                <span class="star">★</span>
+                <span class="star">★</span>
+                <span class="star">☆</span>
+            </div>
+        </a>
+        <a href="MENU2.HTML" class="restaurant-frame">
+            <img src="https://content.jdmagicbox.com/comp/amalapuram/v9/9999p8856.8856.230606212457.u8v9/catalogue/five-star-chicken-moberlypeta-amalapuram-fast-food-zfgv6co8d7.jpg" >
+            <h2>FIVE STAR CHICKEN RESTUARANT</h2>
+            <div class="rating">
+                <span class="star">★</span>
+                <span class="star">★</span>
+                <span class="star">★</span>
+                <span class="star">★</span>
+                <span class="star">☆</span>
+            </div>
+        </a>
+        <a href="MENU.html" class="restaurant-frame">
+            <img src="https://img.restaurantguru.com/r14f-SATHEESH-HOTEL-exterior.jpg">
+            <h2>SATHEESH HOTEL</h2>
+            <div class="rating">
+                <span class="star">★</span>
+                <span class="star">★</span>
+                <span class="star">★</span>
+                <span class="star">★</span>
+                <span class="star">☆</span>
+            </div>
+         </a>
+    </div>
+</body>
+</html>

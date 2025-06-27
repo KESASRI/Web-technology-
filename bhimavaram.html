@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flavour Finder : Restaurant Ratings & Reviews</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-image: url(background.jpeg);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        h1 {
+            font-size: 2rem;
+            color: rgba(244, 143, 165, 0.995);
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+            margin-top: 20px;
+            font-style: italic;
+            font-family: sans-serif;
+        }
+        .container {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: repeat(3, 1fr);
+            gap: 10px;
+            width: 80%;
+            max-width: 1200px;
+            height: auto; 
+        }
+        .restaurant-frame {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            border: 2px solid #0f0707;
+            border-radius: 5px;
+            overflow: hidden;
+            background-color: #eadada;
+            transition: transform 0.2s;
+            text-decoration: none;
+            color: inherit;
+            padding: 10px; 
+        }
+        .restaurant-frame:hover {
+            transform: scale(1.05);
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+        .restaurant-frame img {
+            width: 100%;
+            height: 150px;
+            object-fit: cover;
+        }
+        .restaurant-frame h2 {
+            font-size: 1.2rem;
+            color: #930404;
+            margin: 10px 0;
+        }
+        .rating {
+            display: flex;
+            justify-content: center;
+            margin: 5px 0;
+        }
+        .star {
+            color:rgb(209, 67, 27);
+            margin: 0 1px;
+        }
+        .reviews {
+            font-size: 0.9rem;
+            color: #555;
+        }
+    </style>
+</head>
+<body>
+    <h1>RESTAURANTS IN BHIMAVARAM</h1>
+    <div class="container">
+        <a href="MENU.html" class="restaurant-frame">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT-or7Ryc-Pfz0Z_YGqqjdR1MzYC4E5PTJtNw&s" alt="SUPRABATH RESTUARENT">
+            <h2>SUPRABATH FAMILY RESTUARENT</h2>
+            <div class="rating">
+                <span class="star">★</span>
+                <span class="star">★</span>
+                <span class="star">★</span>
+                <span class="star">★</span>
+                <span class="star">☆</span>
+            </div>
+        </a>
+        <a href="MENU4.HTML" class="restaurant-frame">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQKXVKB7UUDIip1c3KApYWGWUG3nj45pqE14w&s" alt="CHANDRIKA GRAND">
+            <h2>CHANDRIKA GRAND</h2>
+            <div class="rating">
+                <span class="star">★</span>
+                <span class="star">★</span>
+                <span class="star">★</span>
+                <span class="star">★</span>
+                <span class="star">☆</span>
+            </div>
+        </a>
+        <a href="MENU3.HTML" class="restaurant-frame">
+            <img src="https://content3.jdmagicbox.com/comp/bhimavaram/v1/9999p8816.8816.230725130702.l6v1/catalogue/7hrzruwif2n0fg0-1tg1rtsbmx.jpg" alt="AJANTHA GUMAGUMALU">
+            <h2>AJANTHA GUMAGUMALU</h2>
+            <div class="rating">
+                <span class="star">★</span>
+                <span class="star">★</span>
+                <span class="star">★</span>
+                <span class="star">☆</span>
+                <span class="star">☆</span>
+            </div>
+        </a>
+        <a href="MENU3.HTML" class="restaurant-frame">
+            <img src="https://pointlocals.com/uploads/2020/03/31/5e836f9092d0b-S8_KRISHNA20200225_135436-0001.jpg" alt="SRI ABHIRUCHI">
+            <h2>SRI ABHIRUCHI RESTUARENT</h2>
+            <div class="rating">
+                <span class="star">★</span>
+                <span class="star">★</span>
+                <span class="star">★</span>
+                <span class="star">★</span>
+                <span class="star">☆</span>
+            </div>
+        </a>
+        <a href="MENU2.HTML" class="restaurant-frame">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ85iEGPZOH7Yrzu_Pr1qUdecZhv2rzTrbVtg&s" alt="NAIDU GARI KUNDA BRIYANI">
+            <h2>NAIDU GARI KUNDA BRIYANI</h2>
+            <div class="rating">
+                <span class="star">★</span>
+                <span class="star">★</span>
+                <span class="star">★</span>
+                <span class="star">★</span>
+                <span class="star">★</span>
+            </div>
+        </a>
+        <a href="MENU2.HTML" class="restaurant-frame">
+            <img src="https://media.licdn.com/dms/image/v2/C5116AQHSVWK_a9oaPA/profile-displaybackgroundimage-shrink_200_800/profile-displaybackgroundimage-shrink_200_800/0/1548931286015?e=2147483647&v=beta&t=MiLJ3nSp3TNnVx0Pl4ntgzWWmGsPlk6M4OGTCGkVeEI" alt="SPICY VENUE">
+            <h2>SPICY VENUE</h2>
+            <div class="rating">
+                <span class="star">★</span>
+                <span class="star">★</span>
+                <span class="star">★</span>
+                <span class="star">★</span>
+                <span class="star">☆</span>
+            </div>
+        </a>
+        <a href="MENU4.HTML" class="restaurant-frame">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT0a_g0iHfv1HaWGcNabNqmpOMcuB_FQSRRSw&s" alt="MV ROYAL SPICY">
+            <h2>MV ROYAL SPICY</h2>
+            <div class="rating">
+                <span class="star">★</span>
+                <span class="star">★</span>
+                <span class="star">★</span>
+                <span class="star">★</span><!DOCTYPE html>
+            </div>
+        </a>    
+    </body>
+</html>         

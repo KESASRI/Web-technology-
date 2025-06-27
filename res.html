@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Page Navigation</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <div class="container">
+    <h1>Select a page to visit</h1>
+    <div class="navigation">
+      <select id="pageSelect">
+        <option value="">--Choose a page--</option>
+        <option value="https://www.example.com">Example</option>
+        <option value="https://www.wikipedia.org">Wikipedia</option>
+        <option value="https://www.google.com">Google</option>
+      </select>
+      <button onclick="navigateToPage()">Go</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

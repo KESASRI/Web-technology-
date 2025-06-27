@@ -1,0 +1,209 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flavour Finder : Restaurant Ratings & Reviews</title>
+    <style>
+body{
+    background-image: url(background.jpeg);
+}
+        body {
+            font-family: sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center center;
+            height: 100vh;
+            margin: 0;
+            position: relative;
+        }
+
+        
+        body::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.5); 
+            z-index: -1;
+        }
+
+        h1 {
+            font-size: 2rem;
+            color: rgba(244, 143, 165, 0.995);
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+            margin-top: 20px;
+            font-style: italic;
+            font-family: sans-serif;
+        }
+
+       
+        .container {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: repeat(3, 1fr);
+            gap: 10px;
+            width: 80%;
+            max-width: 1200px;
+            margin-top: 30px;
+            height: auto;
+        }
+
+       
+      
+
+       
+        .restaurant-frame {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            border: 2px solid #0f0707;
+            border-radius: 5px;
+            overflow: hidden;
+            background-color: #eadada;
+            transition: transform 0.2s;
+            text-decoration: none;
+            color: inherit;
+            padding: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .restaurant-frame:hover {
+            transform: scale(1.05);
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        .restaurant-frame img {
+            width: 100%;
+            height: 150px;
+            object-fit: cover;
+        }
+
+        .restaurant-frame h2 {
+            font-size: 1.2rem;
+            color: #930404;
+            margin: 10px 0;
+            background-color: transparent;
+        }
+        .rating {
+            display: flex;
+            justify-content: center;
+            margin: 5px 0;
+        }
+
+        .star {
+            color: rgb(209, 67, 27);
+            margin: 0 1px;
+        }
+        
+
+        
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #333;
+            color: #4793b1;
+            width: 100%;
+            position: fixed;
+            bottom: 0;
+        }       
+    </style>
+</head>
+<body>
+    <h1>Restaurants in Tirupati</h1>
+    <div class="container">
+        <a href="MENU.html" class="restaurant-frame">
+            <img src="https://lh3.googleusercontent.com/p/AF1QipPrhvxFbMm1X0BJ40DWPZERdE0ySAWDY0sX0PuA=s1360-w1360-h1020" >
+            <h2>Plantain Leaf Restaurant, Tirupati</h2>
+            <div class="rating">
+                <span class="star">★</span>
+                <span class="star">★</span>
+                <span class="star">★</span>
+                <span class="star">★</span>
+                <span class="star">★</span>
+            </div>
+           
+        </a>
+        <a href="MENU4.HTML" class="restaurant-frame">
+            <img src="https://i.ytimg.com/vi/pySj9wL1UkM/sddefault.jpg">
+            <h2>Gufha Restaurant, Tirupati</h2>
+            <div class="rating">
+                <span class="star">★</span>
+                <span class="star">★</span>
+                <span class="star">★</span>
+                <span class="star">★</span>
+                <span class="star">☆</span>
+            </div>
+            
+        </a>
+        <a href="MENU3.HTML" class="restaurant-frame">
+            <img src="https://lh3.googleusercontent.com/p/AF1QipPvBzbvy0eqEVckqi4j4JC1M0o5eDsIZQupdEXh=s1360-w1360-h1020" >
+            <h2>The Pilot Chef - Rooftop Restaurant, Tirupati</h2>
+            <div class="rating">
+                <span class="star">★</span>
+                <span class="star">★</span>
+                <span class="star">★</span>
+                <span class="star">★</span>
+                <span class="star">☆</span>
+            </div>
+            
+        </a>
+        <a href="MENU.html" class="restaurant-frame">
+            <img src="https://lh3.googleusercontent.com/p/AF1QipNzoueXhG2qi5h7S8Qoitu8PRdzubDxv68OXgp7=s1360-w1360-h1020">
+            <h2>Govinda's Veg Restaurant, ISKCON TEMPLE</h2>
+            <div class="rating">
+                <span class="star">★</span>
+                <span class="star">★</span>
+                <span class="star">★</span>
+                <span class="star">★</span>
+                <span class="star">★</span>
+            </div>
+           
+        </a>
+        <a href="MENU2.HTML" class="restaurant-frame">
+            <img src="https://lh3.googleusercontent.com/p/AF1QipPtbcAkAollKZdlyjlv5rnkE5v0hck5AeSITFs9=s1360-w1360-h1020" >
+            <h2>Blue Fox</h2>
+            <div class="rating">
+                <span class="star">★</span>
+                <span class="star">★</span>
+                <span class="star">★</span>
+                <span class="star">★</span>
+                <span class="star">☆</span>
+            </div>
+            
+        </a>
+        <a href="MENU2.HTML" class="restaurant-frame">
+            <img src="https://content.jdmagicbox.com/comp/tirupati/l9/9999px877.x877.180518225529.i5l9/catalogue/southern-spice-tirupathi-tirupati-restaurants-18hx4tybdf.jpg">
+            <h2>Southern Spice</h2>
+            <div class="rating">
+                <span class="star">★</span>
+                <span class="star">★</span>
+                <span class="star">★</span>
+                <span class="star">★</span>
+                <span class="star">★</span>
+            </div>
+           
+        </a>
+        <a href="MENU4.HTML" class="restaurant-frame">
+            <img src="https://lh3.googleusercontent.com/p/AF1QipPnx6txU25wvv5PQeH4-IyKX4pDgLfmhKTj6NKR=s1360-w1360-h1020" >
+            <h2>Ps4 Restaurant, Thirupathi</h2>
+            <div class="rating">
+                <span class="star">★</span>
+                <span class="star">★</span>
+                <span class="star">★</span>
+                <span class="star">★</span>
+                <span class="star">☆</span>
+            </div>
+           
+        </a>
+
+    </div>
+</body>
+</html>

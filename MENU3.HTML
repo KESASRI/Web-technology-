@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Menu Card</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-image: url('https://img.freepik.com/premium-photo/blank-greeting-card-invitation_1022967-23804.jpg');
+        background-size:cover;
+        background-position:center;
+      color: rgb(1, 1, 1);
+    }
+    .menu-container {
+       
+        margin: 20px auto;
+      padding: 20px;
+      max-width: 500px;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+      text-align: center;
+       margin-top: 10%;
+       margin-right: 30%;
+    }
+    .menu-title {
+      font-size: 2.5em;
+      font-weight: bold;
+      margin-bottom: 20px;
+    }
+    .reviews {
+      margin-bottom: 20px;
+    }
+    .reviews h2 {
+      margin-bottom: 10px;
+    }
+    .review {
+      margin-bottom: 10px;
+    }
+    .stars {
+      color: gold;
+      margin-left: 5px;
+    }
+    .menu-section {
+      margin-bottom: 20px;
+    }
+    .menu-section h3 {
+      border-bottom: 1px solid rgb(176, 84, 84);
+      padding-bottom: 5px;
+      margin-bottom: 10px;
+    }
+    .menu-items {
+      list-style: none;
+      padding: 0;
+    }
+    .menu-items li {
+      padding: 5px 0;
+      display: flex;
+      justify-content: space-between;
+      font-size: 1.1em;
+    }
+    .menu-items .price {
+      color: gold;
+      font-weight: bold;
+    }
+    .review-input {
+      text-align: center;
+      margin-top: 20px;
+    }
+    .review-input input, .review-input button {
+      padding: 10px;
+      margin: 5px;
+      border-radius: 5px;
+      border: none;
+    }
+    .review-input button {
+      background-color: gold;
+      color: black;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <div class="menu-container">
+    <div class="reviews" id="reviews-section">
+      <h2>Customer Reviews</h2>
+      <div class="review">
+        <p>"The perfect place for family functions and celebrations." <span class="stars">★★★★★</span></p>
+      </div>
+      <div class="review">
+        <p>"Each dish had a perfect blend of spices and flavors." <span class="stars">★★★★★</span></p>
+      </div>
+    </div>
+    <div class="menu-section">
+        <div class="menu-title">Restaurant Menu</div>
+      <h3>Starters</h3>
+      <ul class="menu-items">
+        <li>Dahi Kebab<span class="price">$2.99</span></li>
+        <li>Paneer Pakora<span class="price">$1.99</span></li>
+        <li>Chilli Chicken<span class="price">$2.99</span></li>
+      </ul>
+    </div>
+    <div class="menu-section">
+        <h3>Non-Veg</h3>
+        <ul class="menu-items">
+          <li>Mutton Mandi Briyani<span class="price">$4.99</span></li>
+          <li>Chicken Roast Briyani<span class="price">$6.99</span></li>
+          <li>Crab Briyani<span class="price">$7.99</span></li>
+        </ul>
+      </div>
+      <div class="menu-section">
+        <h3>Veg</h3>
+        <ul class="menu-items">
+          <li>Bagara Rice<span class="price">$3.99</span></li>
+          <li>Veg Pulao<span class="price">$2.99</span></li>
+          <li>Paneer Butter Masala<span class="price">$2.99</span></li>
+        </ul>
+      </div>
+    <div class="menu-section">
+      <h3>Juices</h3>
+      <ul class="menu-items">
+        <li>Mosambi<span class="price">$2.49</span></li>
+        <li>Oreo Magic<span class="price">$1.99</span></li>
+        <li>Mixed Berry Smoothie <span class="price">$2.99</span></li>
+      </ul>
+    </div>
+
+   
+    <div class="review-input">
+      <h3>Leave Your Review</h3>
+      <input type="text" id="new-review" placeholder="Your review">
+      <button onclick="addReview()">Submit</button>
+    </div>
+  </div>
+
+  <script>
+    function addReview() {
+      const reviewText = document.getElementById('new-review').value;
+      if (reviewText.trim() === '') {
+        alert('Please enter a review.');
+        return;
+      }
+      const reviewSection = document.getElementById('reviews-section');
+      const newReview = document.createElement('div');
+      newReview.classList.add('review');
+      newReview.innerHTML = `<p>"${reviewText}" <span class="stars">★★★★☆</span></p>`;
+      reviewSection.insertBefore(newReview, reviewSection.children[1]);
+      document.getElementById('new-review').value = '';
+    }
+  </script>
+</body>
+</html>

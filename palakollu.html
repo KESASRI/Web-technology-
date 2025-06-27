@@ -1,0 +1,194 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flavour Finder : Restaurant Ratings & Reviews</title>
+    <style>
+body{
+    background-image: url(background.jpeg);
+}
+        body {
+            font-family: sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center center;
+            height: 100vh;
+            margin: 0;
+            position: relative;
+        }
+
+        
+        body::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.5); 
+            z-index: -1;
+        }
+
+        h1 {
+            font-size: 2rem;
+            color: rgba(244, 143, 165, 0.995);
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+            margin-top: 20px;
+            font-style: italic;
+            font-family: sans-serif;
+        }
+
+       
+        .container {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: repeat(3, 1fr);
+            gap: 10px;
+            width: 80%;
+            max-width: 1200px;
+            margin-top: 30px;
+            height: auto;
+        }
+
+       
+        .restaurant-frame {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            border: 2px solid #0f0707;
+            border-radius: 5px;
+            overflow: hidden;
+            background-color: #eadada;
+            transition: transform 0.2s;
+            text-decoration: none;
+            color: inherit;
+            padding: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .restaurant-frame:hover {
+            transform: scale(1.05);
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        .restaurant-frame img {
+            width: 100%;
+            height: 150px;
+            object-fit: cover;
+        }
+
+        .restaurant-frame h2 {
+            font-size: 1.2rem;
+            color: #930404;
+            margin: 10px 0;
+            background-color: transparent;
+        }
+        .rating {
+            display: flex;
+            justify-content: center;
+            margin: 5px 0;
+        }
+
+        .star {
+            color: rgb(209, 67, 27);
+            margin: 0 1px;
+        }
+        
+
+        
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #333;
+            color: #4793b1;
+            width: 100%;
+            position: fixed;
+            bottom: 0;
+        }       
+    </style>
+</head>
+<body>
+    <h1>Restaurants in Palakollu</h1>
+    <div class="container">
+        <a href="MENU3.HTML" class="restaurant-frame">
+            <img src="https://lh3.googleusercontent.com/p/AF1QipPEeys2ux2MrCUvZXlExMO9d55QaV1aj_yGvX5h=s1360-w1360-h1020" >
+            <h2>Aparna's Kitchen</h2>
+            <div class="rating">
+                <span class="star">★</span>
+                <span class="star">★</span>
+                <span class="star">★</span>
+                <span class="star">★</span>
+                <span class="star">★</span>
+            </div>
+           
+        </a>
+        <a href="MENU2.HTML" class="restaurant-frame">
+            <img src="https://lh3.googleusercontent.com/p/AF1QipPBuSat8Fx1aKAxy6jLHuTsceL1z-EkpQjHQhKe=s1360-w1360-h1020">
+            <h2>JP Family Restaurant a/c</h2>
+            <div class="rating">
+                <span class="star">★</span>
+                <span class="star">★</span>
+                <span class="star">★</span>
+                <span class="star">★</span>
+                <span class="star">★</span>
+            </div>
+            
+        </a>
+        <a href="MENU.html" class="restaurant-frame">
+            <img src="https://lh3.googleusercontent.com/p/AF1QipOnwqEF_XpM96kWXFy15z-xFITf_Q2qZpOy0Md5=s1360-w1360-h1020" >
+            <h2>Vasundhara Family Restaurant</h2>
+            <div class="rating">
+                <span class="star">★</span>
+                <span class="star">★</span>
+                <span class="star">★</span>
+                <span class="star">★</span>
+                <span class="star">☆</span>
+            </div>
+            
+        </a>
+        <a href="MENU4.HTML" class="restaurant-frame">
+            <img src="https://lh3.googleusercontent.com/p/AF1QipPg_CdPYIUZuTK54XF3OpDmua47cQUOhx8vwrSj=s1360-w1360-h1020">
+            <h2>Vaibhav Multicuisine Restaurant Palakollu</h2>
+            <div class="rating">
+                <span class="star">★</span>
+                <span class="star">★</span>
+                <span class="star">★</span>
+                <span class="star">★</span>
+                <span class="star">☆</span>
+            </div>
+           
+        </a>
+        <a href="MENU3.HTML" class="restaurant-frame">
+            <img src="https://lh3.googleusercontent.com/p/AF1QipNhEnv-KzE_0ZFVx0hIFrD3-a6lM4F7wtAOB3UG=s1360-w1360-h1020" >
+            <h2>lakshmi Gayatri resturent</h2>
+            <div class="rating">
+                <span class="star">★</span>
+                <span class="star">★</span>
+                <span class="star">★</span>
+                <span class="star">★</span>
+                <span class="star">☆</span>
+            </div>
+            
+        </a>
+        <a href="MENU.html" class="restaurant-frame">
+            <img src="https://lh3.googleusercontent.com/p/AF1QipPP3uqgXHoLRL6nNQ_Svr-YCdcW-UXfe9kVJI7p=s1360-w1360-h1020">
+            <h2>SHARAVANAA's DELIGHT the family kitchen</h2>
+            <div class="rating">
+                <span class="star">★</span>
+                <span class="star">★</span>
+                <span class="star">★</span>
+                <span class="star">★</span>
+                <span class="star">☆</span>
+            </div>
+           
+        </a>
+        
+    </div>
+</body>
+</html>
